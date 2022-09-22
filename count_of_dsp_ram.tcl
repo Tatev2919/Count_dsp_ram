@@ -4,9 +4,7 @@ set count_ram 0
 set word 0
 set title [ list "Netlist" "ram/dsp inst" "count" ]
 set data [ list "--"  "--" "--" ]
-#set design_t "ec_design_tests/design_tests_synthesized"
-#set flow "SynplifyPro_2012.09/LiberoIDE_v9.2"
-#set design "Axcelerator/std/microsemi"
+
 set result_file ""
 set flag 0
 
@@ -40,8 +38,7 @@ proc info_search {m netlist word title} {
 	lset data 0 $m
 	lset data 1 $word 
 	lset data 2 $count_ram
-	#puts $netlist  
-	#puts $title
+
 	puts $result_file [join $data "," ]
 }
 
